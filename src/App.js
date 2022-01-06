@@ -4,6 +4,7 @@ import NavBar from './components/NavBar';
 import Coffee from './components/Coffee';
 import {useState} from 'react';
 import YourCoffee from './components/YourCoffee';
+import Login from "./components/Login";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 
 function App() {
@@ -75,6 +76,10 @@ function addCoffee(title, id) {
         <Route
         path="/yourcoffee"
         element={<YourCoffee coffee={yourCoffee}/>}
+        />
+        <Route 
+        path="/login"
+        element={<Login/>}
         />
       </Routes>
     </BrowserRouter>
