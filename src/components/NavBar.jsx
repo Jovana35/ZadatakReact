@@ -8,6 +8,7 @@ function NavBar({coffeeNum}) {
             <Link to="/" className="nav-li">Home</Link>
             <Link to="/yourcoffee" className="nav-li">Your coffee</Link>
             <Link to="/login" className="nav-li">Login</Link>
+            
             <p className="nav-li">{coffeeNum} <GiCoffeeCup/></p>
         </div>
       );
